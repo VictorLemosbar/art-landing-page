@@ -1,0 +1,67 @@
+.footer-container {
+    max-width: 100%;
+    background-color: #8B5E3C;
+    padding: 20px;
+
+}
+
+.footer-space {
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 52px;
+
+
+}
+
+.contact-container {
+    max-width: 200px;
+    align-self: center;
+
+}
+
+.mensions-container {
+    max-width: 200px;
+    min-width: 100px;
+    gap: 15px;
+}
+
+
+.footer-aboutUs {
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+}
+
+.footer-mentions {
+    font-size: 0.85rem;
+    opacity: 0.85;
+
+
+}
+
+.footer-text {
+    width: 100%;
+
+}
+
+.img-footer {
+
+    max-width: 10%;
+    max-height: 10%;
+}
+
+.img-footer-container {
+    display: inline;
+}
+
+.btn-footer {
+    display: flex;
+}
