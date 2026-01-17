@@ -1,20 +1,11 @@
-.container {
-
-}
+.container {}
 
 
-.container :hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-    transform: translateY(-6px);
-    box-shadow: 0 20px 40px rgba(39, 13, 13, 0.15);
-
-}
+.container :hover {}
 
 
 .card-container {
-    background-color:#8B5E3C
-;
+    background-color: #8B5E3C;
     margin-bottom: 15px;
 
     max-width: 650px;
@@ -30,27 +21,26 @@
     gap: 32px;
     padding: 32px;
 
-
-
 }
 
 
 .card-info {
     display: flex;
-        flex-direction: column;
+    flex-direction: column;
 
-    
+
     max-width: 300px;
     max-height: 250px;
     justify-content: center;
     align-items: center;
 
-         pointer-events: none;
-
-    
-    
 }
 
+.image-container:hover {
+    transform: translateY(-6px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
 
 .card-title {
     font-size: xx-large;
@@ -65,25 +55,44 @@
 
 }
 
+.card-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
 
 .card-text {
     max-width: 300px;
-    font-size: small;
-    align-content: center;
+
+
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 1.6;
 
 
 }
 
 .image-container {
-    width: 35%;
-    height: 35%;
+    width:60%;
+    height: 60%;
 
     display: flex;
     align-items: center;
     justify-content: center;
-         pointer-events: none;
 
 
 }
 
 
+.image-container:hover .image-import {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.image-import:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}

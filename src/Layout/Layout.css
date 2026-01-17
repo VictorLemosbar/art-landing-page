@@ -1,3 +1,18 @@
-.page-container {
-    width: 100%;
+
+.app-container {
+  font-family: Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 6vw; 
+  }
+
+  .card {
+    width: 100%; 
+  }
 }

@@ -18,7 +18,7 @@ const InforCard = () => {
     {
 
         theme: "Valor",
-        description: "tNossos produtos carregam mais do que beleza: carregam significado. Cada peça é feita à mão, com tempo, cuidado e intenção, transformando materiais em algo único e especial. O verdadeiro valor está na história por trás de cada criação, no trabalho artesanal e na exclusividade de levar para casa algo feito com alma, não em série.",
+        description: "Nossos produtos carregam mais do que beleza: carregam significado. Cada peça é feita à mão, com tempo, cuidado e intenção, transformando materiais em algo único e especial. O verdadeiro valor está na história por trás de cada criação, no trabalho artesanal e na exclusividade de levar para casa algo feito com alma, não em série.",
         img: img2
     }
     ]
@@ -38,7 +38,7 @@ const InforCard = () => {
                             <span className="card-text" >{item.description}</span>
                         </div>
                         <div className="image-container">
-                            <ImageComponent img={item.img} variant={"not-default"} />
+                            <ImageComponent className="image-import"img={item.img} variant={"not-default"} />
                         </div>
                     </div>
                 )

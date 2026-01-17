@@ -73,7 +73,7 @@ const Footer = () => {
                             />
                         ))}
                     </div>
-                    <button className="btn-footer">Follow</button>
+                    <button onClick={() => alert("Seguindo")}className="btn-footer">Follow</button>
                 </div>
             </div>
 
