@@ -47,7 +47,7 @@ const Footer = () => {
         <div className="footer-container">
             <div className="footer-space">
                 <div className="footer-aboutUs">
-                    <ImageComponent img={logo} variant="footer" />
+                    <ImageComponent className="footer-img"img={logo} variant="footer" />
 
                     <div className="footer-text">Acreditamos que o artesanato vai além de criar objetos — é contar histórias, transmitir cuidado e valorizar cada detalhe. Nosso trabalho nasce do carinho pelo feito à mão, da escolha consciente dos materiais e do respeito ao tempo de criação de cada peça.</div>
                 </div>

@@ -5,7 +5,8 @@
 
 @media (max-width: 768px) {
   .app-container {
-    padding: 10px;
+    max-width: 768px;
+    height: auto;
   }
 
   h1 {

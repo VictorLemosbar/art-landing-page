@@ -6,9 +6,7 @@
 }
 
 .footer-space {
-    max-width: 1200px;
-    width: 100%;
-    height: 100%;
+    max-width: 1200px; 
     margin: 0 auto;
     padding: 0 20px;
 
@@ -16,7 +14,7 @@
     justify-content: space-between;
     align-items: center;
 
-    gap: 52px;
+    gap: 20px;
 
 
 }
@@ -29,7 +27,6 @@
 
 .mensions-container {
     max-width: 200px;
-    min-width: 100px;
     gap: 15px;
 }
 
@@ -54,9 +51,8 @@
 }
 
 .img-footer {
-
-    max-width: 10%;
-    max-height: 10%;
+ width: 40px;
+    height: auto; 
 }
 
 .img-footer-container {
@@ -65,4 +61,19 @@
 
 .btn-footer {
     display: flex;
+}
+
+.btn-footer:hover {
+  transform: translateY(-6px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-img {
+transform: translateY(-6px);
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.footer-img:hover {
+      transform: scale(1.1); 
+
 }

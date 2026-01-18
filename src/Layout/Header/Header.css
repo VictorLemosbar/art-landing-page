@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  height: 90px;
+  height: 100px;
   background-color: #8B5E3C
 }
 
@@ -25,4 +25,11 @@
 .header-text {
   color: white;
 
+}
+
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+    height: 5.0rem;
+  }
 }

@@ -1,8 +1,7 @@
 .card {
     display: flex;
-    width: 100%;
 
-    width: 1300px;
+    max-width: 1300px;
     height: 250px;
     margin: 1rem auto;
     perspective: 1000px;
@@ -57,12 +56,12 @@
 }
 
 .card-back {
-     width: 225px;
+    width: 225px;
     height: 200px;
     background-color: #8B5E3C;
     color: white;
     transform: rotateY(180deg);
-  
+
 }
 
 
@@ -72,9 +71,7 @@
     border-radius: 15px;
 }
 
-.card-item-name {
-
-}
+.card-item-name {}
 
 .card-iem-price {
     display: flex;
@@ -89,4 +86,86 @@
 
 .p-title {
     color: #8B5E3C;
+}
+
+@media (max-width: 768px) {
+
+    .card {
+        max-width: 768px;
+        width: 80%;
+        max-height: 400px;
+        height: 50%;
+
+        gap: 10px;
+
+    }
+
+    .card-inner {
+        max-width: 4.8rem;
+        width: 4.8rem;
+        height: 5.0rem;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+
+    .card-front,
+    .card-back {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .img-size {
+        max-width: 100%;
+        border-radius: 15px;
+    }
+
+    .card:hover .card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .card-back {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        transform: rotateY(180deg);
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .card-item-name {
+        display: flex;
+        max-width: 100px;
+        width: 50%;
+
+        font-size: 0.5rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .card-iem-price {
+        max-width: 40px;
+        width: 90%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        border-radius: 15px;
+        background-color: #4b2e1e;
+        font-size: 0.5rem;
+        margin-top: 5%;
+    }
 }

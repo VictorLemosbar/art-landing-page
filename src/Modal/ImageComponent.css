@@ -4,40 +4,39 @@
 }
 
 .img-default img {
-  width: 80%;
   max-width: 80%;
+  width: fit-content;
+  height: auto;
   display: flex;
   justify-content: center;
   margin: auto;
 }
 
 .img-not-default img {
- width: 100%;
+  width: 100%;
   height: 100%;
   display: block;
   margin-left: auto;
 
-      border-radius: 3px;
+  border-radius: 3px;
 
 }
 
 
-.img-footer img{
+.img-footer img {
 
   width: 150px;
   height: 50px;
 
-   display: block;   
+  display: block;
   height: auto;
 
   border-radius: 15px;
 
- 
+
 }
 
-
-
-
-
-
-
+.img-footer img:hover {
+  transform: translateY(-6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
