@@ -110,6 +110,9 @@
   .image-container {
     max-width: 100%;
     width: 75%;
+
+      transition: transform 0.3s ease;
+
   }
 
   .card-info {
@@ -134,4 +137,15 @@
 
   transition: transform 0.3s ease, filter 0.3s ease;
 }
+
+.image-container:hover .image-import {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.image-container:hover {
+  transform: translateY(-6px);
+}
+
+
 }
