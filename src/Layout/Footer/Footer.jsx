@@ -62,7 +62,7 @@ const Footer = () => {
                     })}
                 </div>
                 <div className="contact-container">
-                    <h2>Connect with us</h2>
+                    <h2 className="h2-text">Connect with us</h2>
                     <div className="img-footer-container">
                         {images.map(item => (
                             <img
