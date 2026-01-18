@@ -32,4 +32,8 @@
     width: 100%;
     height: 5.0rem;
   }
+
+  .header-text {
+    font-size: 1.0rem;
+  }
 }
