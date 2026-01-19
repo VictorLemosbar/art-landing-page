@@ -133,7 +133,7 @@
   max-width: 400px;
   width: 50%;
   height: auto;
-  border-radius: 15px;
+  border-radius: 20px;
 
   transition: transform 0.3s ease, filter 0.3s ease;
 }

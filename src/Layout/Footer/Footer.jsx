@@ -62,7 +62,7 @@ const Footer = () => {
                     })}
                 </div>
                 <div className="contact-container">
-                    <h2 className="h2-text">Connect with us</h2>
+                    <h2 className="h2-text">Fale Conosco</h2>
                     <div className="img-footer-container">
                         {images.map(item => (
                             <img
@@ -73,7 +73,7 @@ const Footer = () => {
                             />
                         ))}
                     </div>
-                    <button onClick={() => alert("Seguindo")}className="btn-footer">Follow</button>
+                    <button onClick={() => alert("Seguindo")}className="btn-footer">Seguir</button>
                 </div>
             </div>
 

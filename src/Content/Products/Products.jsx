@@ -42,7 +42,7 @@ const Products = () => {
     return (
         <>
             <h1 className="products-title">Produtos</h1>
-            <p className="p-title">Passe o mouse sobre a imagem</p>
+            <p className="p-title">Clique na imagem para ver dados do produto</p>
             <div className="card" >
                 {producstList.map(item => {
                     return (
