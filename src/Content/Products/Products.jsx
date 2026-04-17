@@ -5,7 +5,6 @@ import img2 from "../../assets/bolsa.png"
 import img3 from "../../assets/quadro.png"
 import img4 from "../../assets/sabonete.png"
 
-
 import { useState } from "react"
 
 const Products = () => {
@@ -39,23 +38,37 @@ const Products = () => {
         }
     ]
 
+    const handleFlip = (index) => {
+        setActive(active === index ? null : index)
+    }
+
     return (
         <>
             <h1 className="products-title">Produtos</h1>
-            <p className="p-title">Clique na imagem para ver dados do produto</p>
-            <div className="card" >
-                {producstList.map(item => {
+
+            <div className="card">
+                {producstList.map((item, index) => {
                     return (
-                        <div className="card-inner" key={item.nome}>
+                        <div
+                            className={`card-inner ${active === index ? "flipped" : ""}`}
+                            key={item.nome}
+                            onClick={() => handleFlip(index)}
+                        >
+                            <div className="card-front">
+                                <img className="img-size" src={item.img} alt="" />
+                                <span className="price-overlay">
+                                    R$ {item.preco.toFixed(2)}
+                                </span>
+                            </div>
+
                             <div className="card-back">
                                 <span className="card-item-name">{item.nome}</span>
-                                <span className="card-iem-price">R$ {item.preco}</span>
-                            </div>
-                            <div className="card-front">
-                                <img className="img-size" src={item.img} alt=""></img>
+                                <span className="card-item-price">
+                                    R$ {item.preco.toFixed(2)}
+                                </span>
+                                <span className="card-material">{item.material}</span>
                             </div>
                         </div>
-
                     )
                 })}
             </div>
