@@ -13,7 +13,7 @@ const Products = () => {
 
     const producstList = [
         {
-            nome: "Vaso de cerâmica artesanal",
+            nome: "Vaso de cerâmica",
             preco: 120.00,
             material: "Cerâmica",
             img: img1
@@ -25,7 +25,7 @@ const Products = () => {
             img: img2
         },
         {
-            nome: "Quadro decorativo em madeira",
+            nome: "Quadro decorativo",
             preco: 250.00,
             material: "Madeira reciclada",
             img: img3
@@ -56,9 +56,14 @@ const Products = () => {
                         >
                             <div className="card-front">
                                 <img className="img-size" src={item.img} alt="" />
-                                <span className="price-overlay">
-                                    R$ {item.preco.toFixed(2)}
-                                </span>
+                                <div className="overlay-container">
+                                    <span className="name-overlay">
+                                        {item.nome}
+                                    </span>
+                                    <span className="price-overlay">
+                                        R$ {item.preco.toFixed(2)}
+                                    </span>
+                                </div>
                             </div>
 
                             <div className="card-back">

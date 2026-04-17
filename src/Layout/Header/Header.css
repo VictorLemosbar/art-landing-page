@@ -3,7 +3,6 @@
   height: 100px;
   background-color: #8B5E3C;
 
-  /* animação de entrada */
   animation: slideDown 0.6s ease forwards;
 }
 
@@ -28,7 +27,6 @@
   justify-content: space-between;
   align-items: center;
 
-  /* leve efeito de fade */
   animation: fadeIn 1s ease;
 }
 
@@ -39,12 +37,19 @@
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
+  background-color: white;
+  color: #8B5E3C;
+
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .header-text {
-  color: white;
+  color: #8B5E3C;
+
   position: relative;
   cursor: pointer;
 
@@ -53,7 +58,6 @@
     transform 0.2s ease;
 }
 
-/* underline animado mais suave */
 .header-text::after {
   content: "";
   position: absolute;
@@ -62,14 +66,13 @@
 
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, #fff, #f3d2b3);
+  background: linear-gradient(90deg, #fff, #f6871f);
 
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.3s ease;
 }
 
-/* hover moderno */
 .header-text:hover {
   color: #f3d2b3;
   transform: translateY(-2px);
@@ -80,17 +83,14 @@
   transform-origin: left;
 }
 
-/* click feedback */
 .header-text:active {
   transform: scale(0.95);
 }
 
-/* efeito leve no header inteiro ao passar mouse */
 .header:hover {
   box-shadow: 0 4px 20px rgba(0,0,0,0.15);
 }
 
-/* mobile */
 @media (max-width: 768px) {
   .header {
     height: 5rem;

@@ -15,7 +15,7 @@ const Header = () => {
                 </div>
 
                 <nav className="navbar">
-                    <a onClick={() => window.location.href = "https://github.com/VictorLemosbar"} className="header-text">Dev - Victor Lemos Barbosa</a>
+                    <a onClick={() => window.location.href = "https://github.com/VictorLemosbar"} className="header-text">Sobre nós</a>
                 </nav>
             </div>
         </header>
