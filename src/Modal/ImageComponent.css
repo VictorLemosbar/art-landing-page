@@ -25,7 +25,7 @@
 
 .img-footer img {
 
-  width: 100px;
+  width: 170px;
   height: auto;
 
   display: block;
@@ -37,6 +37,6 @@
 }
 
 .img-footer img:hover {
-  transform: translateY(-6px);
+  transform: translateY(-2px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

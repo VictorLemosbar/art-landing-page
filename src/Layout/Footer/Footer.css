@@ -2,13 +2,10 @@
     max-width: 100%;
     background-color: #8B5E3C;
     padding: 20px 10px;
-
-    /* entrada suave */
     animation: fadeUp 0.8s ease;
     position: relative;
 }
 
-/* linha sutil no topo (detalhe premium) */
 .footer-container::before {
     content: "";
     position: absolute;
@@ -31,15 +28,25 @@
     }
 }
 
+@keyframes floatIcon {
+    0% {
+        transform: translateY(-6px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(-6px);
+    }
+}
+
 .footer-space {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 10px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     gap: 20px;
 }
 
@@ -47,8 +54,6 @@
     width: 40%;
     padding: 10px;
 }
-
-
 
 .contact-container,
 .mensions-container,
@@ -62,7 +67,6 @@
     transform: translateY(-3px);
 }
 
-/* textos mais suaves */
 .footer-text {
     width: 100%;
     margin-top: 5px;
@@ -84,18 +88,14 @@
     opacity: 1;
 }
 
-/* botão mais moderno */
 .btn-footer {
     display: flex;
     align-items: center;
     justify-content: center;
-
     background-color: white;
     color: #8B5E3C;
-
     border-radius: 10px;
     padding: 6px 12px;
-
     transition: all 0.25s ease;
 }
 
@@ -110,7 +110,6 @@
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
-/* imagens com efeito mais fluido */
 .footer-img {
     transform: translateY(-6px);
     transition: transform 0.4s ease, filter 0.3s ease;
@@ -121,7 +120,24 @@
     filter: brightness(1.2);
 }
 
-/* ícones */
+.img-back {
+    display: flex;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 15px;
+    animation: floatIcon 3s ease-in-out infinite;
+    transition: transform 0.4s ease, filter 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.img-back:hover {
+    animation-play-state: paused;
+    transform: translateY(-10px) scale(1.1);
+    filter: brightness(1.08);
+    background-color: #fafafa;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
 .img-footer {
     width: 40px;
     height: auto;
@@ -135,13 +151,12 @@
 .img-footer-container {
     display: flex;
     max-width: 50px;
+    gap: 10px;
     width: 100%;
     margin-bottom: 10px;
 }
 
-/* mobile */
 @media (max-width: 768px) {
-
     .footer-space {
         justify-content: center;
         align-items: center;
@@ -171,7 +186,7 @@
     .contact-container {
         max-width: 150px;
         width: 50%;
-        gap: 10px   
+        gap: 10px;
     }
 
     .h2-text {
